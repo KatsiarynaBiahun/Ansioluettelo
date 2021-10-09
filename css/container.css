@@ -1,0 +1,777 @@
+.scrollspy {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding-top: 15vh;*/
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid teal;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .scrollspy {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .scrollspy {
+    border: none;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* 1.osa */
+.profiili {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.profiili-minusta {
+  max-width: 600px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 40px;
+  margin-top: 200px;
+  position: absolute;
+  z-index: 2;
+}
+
+.profiili img {
+  max-width: 700px;
+  width: 100%;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  margin-top: 100px;
+}
+
+.profiili-button {
+  margin-top: 520px;
+  margin-left: 50px;
+  position: absolute;
+  height: 40px;
+  z-index: 3;
+  bottom: -20px;
+}
+
+.profiili-button img {
+  max-width: 15px;
+  width: 100%;
+  position: relative;
+  margin-top: 0px;
+  padding-left: 35px;
+}
+
+.profiili-button a {
+  position: relative;
+}
+
+.profiili-button div {
+  margin-right: 15px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 25px;
+  border-color: transparent;
+  cursor: pointer;
+  background-image: url(/img/CE95A1D4-7377-4E36-85CA-A293782B88D8.png);
+  border: transparent;
+  z-index: 30;
+  background-position: center;
+  background-size: 300px;
+  font-size: 16px;
+  font-family: Raleway;
+}
+
+.down {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.down img {
+  width: 40px;
+  filter: invert(73%) sepia(40%) saturate(6098%) hue-rotate(320deg)
+    brightness(108%) contrast(88%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .profiili,
+  .profiili-minusta {
+    width: 90%;
+  }
+  .profiili-button {
+    bottom: 3px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .profiili,
+  .profiili-minusta {
+    width: 80%;
+  }
+  .profiili img {
+    display: none;
+  }
+  .profiili-button button {
+    width: 110px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .profiili,
+  .profiili-minusta {
+    margin: 0;
+    top: 40px;
+    width: 90%;
+    left: -12px;
+  }
+  .profiili-button div {
+    width: 110px;
+  }
+  .profiili-button {
+    margin-left: 0;
+  }
+  .profiili img {
+    display: none;
+  }
+  .down {
+    display: none;
+  }
+}
+
+/* 6.osa */
+.yhteydenotto {
+  position: relative;
+}
+
+.yhteydenotto-form {
+  position: relative;
+  float: right;
+  margin-right: 300px;
+  margin-top: 180px;
+  max-width: 540px;
+  width: 100%;
+}
+
+.yhteydenotto-form form {
+  background-color: whitesmoke;
+  padding: 40px;
+}
+
+.g-recaptcha {
+  margin-top: 10px;
+}
+
+.yhteydenotto-form h1 {
+  text-align: center;
+}
+
+.yhteydenotto-form input {
+  padding-top: 7px;
+  padding-left: 8px;
+  margin-top: 30px;
+  width: 440px;
+  height: 30px;
+  font-size: 13px;
+}
+
+.yhteydenotto-form input#send {
+  width: 460px;
+}
+
+.form-item {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.form-item label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 45px;
+  color: #818181;
+  font-size: 13px;
+  transition: 0.2s ease all;
+}
+
+.form-item input:focus ~ label,
+.form-item input:not(:focus):valid ~ label,
+.form-item textarea:focus ~ label,
+.form-item textarea:not(:focus):valid ~ label {
+  font-size: 10px;
+  top: 32px;
+  bottom: 10px;
+  left: 10px;
+  opacity: 1;
+}
+
+.yhteydenotto-form textarea {
+  resize: none;
+  margin-top: 30px;
+  width: 440px;
+  height: 80px;
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+.yhteydenotto-icon {
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*svg img värin vaihtaminen*/
+.filter-svg {
+  width: 30px;
+  height: 30px;
+  filter: invert(99%) sepia(8%) saturate(98%) hue-rotate(260deg)
+    brightness(116%) contrast(92%);
+}
+
+.filter-svg:hover {
+  filter: invert(73%) sepia(40%) saturate(6098%) hue-rotate(320deg)
+    brightness(108%) contrast(88%);
+}
+
+.up {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 20px;
+}
+
+.up img {
+  width: 40px;
+  filter: invert(99%) sepia(8%) saturate(98%) hue-rotate(260deg)
+    brightness(116%) contrast(92%);
+}
+
+.yhteydenotto-icon h2 {
+  text-align: center;
+}
+
+.yhteydenotto-icon a {
+  /*display: block;*/
+  padding: 10px;
+}
+.yhteydenotto-icon img {
+  max-width: 30px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .yhteydenotto-form {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .yhteydenotto-form {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .yhteydenotto-form,
+  .yhteydenotto-form input,
+  .yhteydenotto-form textarea,
+  .yhteydenotto-form input#send {
+    width: 100%;
+  }
+  .yhteydenotto-form {
+    margin: 0 auto;
+    left: -19px;
+    margin-top: 300px;
+    margin-bottom: 20px;
+  }
+  .yhteydenotto-form form {
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+  .yhteydenotto-icon a {
+    width: 90%;
+    padding: 5px;
+  }
+  .yhteydenotto-icon p {
+    text-align: center;
+  }
+  .up {
+    display: none;
+  }
+}
+
+/*lähetysviesti vimeisellä sivulla*/
+.yhteydenotto-report {
+  background-color: white;
+  background-size: cover;
+  max-width: 400px;
+  width: 100%;
+  height: 150px;
+  z-index: 9999;
+  position: relative;
+  top: 450px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.yhteydenotto-report img {
+  max-width: 90px;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.yhteydenotto-button {
+  background-color: rgb(222, 221, 219);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  z-index: 4;
+}
+
+.yhteydenotto-report button {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}
+
+.yhteydenotto-report p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 22px;
+  position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+  .yhteydenotto-report {
+    width: 90%;
+    top: 600px;
+  }
+  .yhteydenotto-report p {
+    font-size: 16px;
+  }
+}
+
+/* 2.osa */
+.taidot {
+  position: relative;
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.taidot-left {
+  display: inline-table;
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+}
+
+.taidot-right {
+  display: inline-table;
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.taidot-it {
+  position: relative;
+  padding: 20px;
+  height: 760px;
+  max-width: 310px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px dotted rgb(240, 189, 166, 0.5);
+}
+
+.taidot h4 {
+  margin-left: 0;
+}
+
+.taidot-muut,
+.taidot-henkilokohtaiset,
+.taidot-kielet,
+.taidot-tyokortit {
+  position: absolute;
+  padding: 20px;
+  height: 300px;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px dotted rgb(240, 189, 166, 0.5);
+}
+
+.taidot-muut {
+  word-spacing: 10px;
+}
+
+.taidot-henkilokohtaiset {
+  margin-top: 50px;
+  margin-left: 350px;
+  word-spacing: 10px;
+}
+
+.taidot-tyokortit {
+  margin-left: 350px;
+  margin-top: 400px;
+}
+
+.taidot-kielet {
+  margin-top: 350px;
+}
+
+.taidot-kielet img {
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+.taidot-tyokortit img {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .taidot-it,
+  .taidot-left {
+    width: 80%;
+    height: auto;
+  }
+  .taidot-right,
+  .taidot-kielet,
+  .taidot-muut,
+  .taidot-tyokortit,
+  .taidot-henkilokohtaiset {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .taidot,
+  .taidot-left,
+  .taidot-it {
+    width: 80%;
+    height: auto;
+  }
+  .taidot-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .taidot,
+  .taidot-left,
+  .taidot-it {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    left: -9px;
+    top: 0;
+  }
+  .taidot-right {
+    display: none;
+  }
+}
+
+/* 3.osa */
+.tyokokemus-kaikki {
+  top: 200px;
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tyokokemus-table {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  border: transparent;
+}
+
+.tyokokemus-table th {
+  width: 700px;
+  font-family: Raleway;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.tyokokemus-table td,
+.tyokokemus-tablemuu td {
+  background-color: rgb(78, 177, 183, 0.5);
+  padding: 20px;
+  width: 700px;
+}
+
+.tyokokemus-muu {
+  margin-top: 20px;
+}
+
+.tyokokemus-muu img#info {
+  width: 25px;
+  padding-left: 50px;
+  float: left;
+  margin-top: 15px;
+}
+
+.tyokokemus-table img,
+.tyokokemus-tablemuu img {
+  width: 100px;
+  height: 120px;
+  float: left;
+  padding-bottom: 15px;
+}
+
+/*muu työkokemus*/
+.hide,
+.hide + label ~ .lisaa {
+  display: none;
+}
+
+.lisaa {
+  margin-top: 5px;
+  overflow-y: scroll;
+  width: 700px;
+  height: 200px;
+}
+
+.lisaa::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 10px;
+  background-color: white;
+}
+
+.lisaa::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(78, 177, 183, 0.5);
+}
+
+.lisaa::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+}
+
+#label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway;
+  width: 250px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#label img {
+  padding-right: 40px;
+}
+
+.hide + label {
+  padding: 0;
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(19, 72, 90);
+}
+
+/* jos napsauttaa "lue lisaa" */
+.hide:checked + label {
+  color: black;
+  border-bottom: 0;
+}
+
+.hide:checked + label img#info {
+  transform: rotate(180deg) translateX(-10px);
+}
+
+/* tietoja checkbox:ssa  */
+.hide:checked + label + div {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .tyokokemus-kaikki,
+  .tyokokemus-table {
+    width: 90%;
+  }
+  .tyokokemus-muu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .tyokokemus-table img {
+    display: none;
+  }
+  .tyokokemus-kaikki,
+  .tyokokemus-table {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .expirience {
+    display: none;
+  }
+  .education {
+    width: 100%;
+  }
+  .tyokokemus-table {
+    margin-top: 60px;
+    left: -20px;
+  }
+  .tyokokemus-table img {
+    display: none;
+  }
+  .tyokokemus-muu {
+    display: none;
+  }
+}
+
+/* 4.osa */
+.projektit {
+  margin-top: 150px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+  max-width: 1600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.numbertext img {
+  width: 100%;
+}
+
+/* 5.osa */
+.harrastukset {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.harrastukset img {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  z-index: 3;
+  max-width: 450px;
+  width: 100%;
+}
+
+/*shaped, kulmikas teksti*/
+.harrastukset-shaped {
+  position: relative;
+  background: transparent center top no-repeat;
+  height: 55vh;
+  width: 40vw;
+  background-size: cover;
+  float: left;
+  shape-outside: polygon(0 35%, 0 100%, 100% 100%, 50% 100%);
+  shape-margin: 45px;
+  clip-path: polygon(0 35%, 0 100%, 100% 100%, 50% 100%);
+}
+
+.harrastukset-text {
+  position: absolute;
+  max-width: 1000px;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin: 0 auto;
+  left: 20%;
+  top: 200px;
+}
+
+.harrastukset-text h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.harrastukset-text p {
+  margin: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .harrastukset,
+  .harrastukset-text {
+    width: 90%;
+  }
+  .harrastukset img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .harrastukset,
+  .harrastukset-text {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+  .harrastukset-shaped,
+  .harrastukset img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .harrastukset,
+  .harrastukset-text {
+    width: 100%;
+    top: 0;
+    left: -10px;
+    height: auto;
+  }
+  .harrastukset-text h2 {
+    font-size: 18px;
+  }
+  .harrastukset-shaped,
+  .harrastukset img {
+    display: none;
+  }
+}

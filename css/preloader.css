@@ -1,0 +1,43 @@
+.preloader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.preloader__loader {
+  position: relative;
+  top: 50%;
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .preloader__loader {
+    width: 90%;
+  }
+}
+
+#progressBar {
+  width: 100%;
+  background-color: rgb(222, 221, 219, 0.5);
+  position: relative;
+  border-radius: 10px;
+}
+
+#edistymispalkki {
+  width: 0%;
+  height: 30px;
+  background-color: rgb(244, 114, 109, 0.5);
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  color: rgb(244, 114, 109);
+}

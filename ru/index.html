@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--sivun kuvaus-->
+    <meta
+      name="description"
+      content="Прочти больше информации о Катерине Бегун на сайте-портфолио и исследуй свежий контент. Найдите сотрудника для своей команды, мне будет приятно посотрудничать с вами!"
+    />
+    <meta name="keywords" content="программист, работа, опыт" />
+    <meta name="author" content="Катерина Бегун" />
+    <!--sivun icon-->
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <!--css tiedostot-->
+    <link rel="stylesheet" href="../css/preloader.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="../css/container.css" type="text/css" />
+    <link rel="stylesheet" href="../css/header.css" type="text/css" />
+    <link rel="stylesheet" href="../css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="../css/slideshow.css" type="text/css" />
+    <!--sivun kielivaihtoehdot-->
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com"
+      hreflang="x-default"
+    />
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com"
+      hreflang="fi"
+    />
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com/ru"
+      hreflang="ru"
+    />
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com/en"
+      hreflang="en"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WDXK8PNZS6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-WDXK8PNZS6");
+    </script>
+    <!--sivun title-->
+    <title>Катерина Бегун • Резюме</title>
+  </head>
+
+  <body onload="load()">
+    <!--navigointivalikon yläpuolella-->
+    <header>
+      <div class="header" id="header-link">
+        <ul>
+          <li class="current">
+            <a href="#profiili">Профиль</a>
+          </li>
+          <li><a href="#taidot">Навыки и сертификаты</a></li>
+          <li><a href="#tyokokemus">Опыт и образование</a></li>
+          <li><a href="#projekti">Проекты</a></li>
+          <li><a href="#harrastukset">Увлечения</a></li>
+          <li><a href="#yhteydenotto">Контакты</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="headerResponsive()"
+          >&#9776;</a
+        >
+        <!--avattavasta luettelosta sivujen kielet-->
+        <select name="Languages" onchange="location = this.value;">
+          <option value="/index.html">ФИН</option>
+          <option value="/en/index.html">АНГ</option>
+          <option value="/ru/index.html" selected>РУС</option>
+        </select>
+      </div>
+    </header>
+
+    <!--navigointivalikon oikealla puolella-->
+    <div class="navbar" id="na">
+      <ul>
+        <li class="current">
+          <a href="#profiili"><span>Профиль</span> </a>
+        </li>
+        <li>
+          <a href="#taidot"><span>Навыки и сертификаты</span></a>
+        </li>
+        <li>
+          <a href="#tyokokemus"> <span>Опыт и образование</span></a>
+        </li>
+        <li>
+          <a href="#projekti"><span>Проекты</span></a>
+        </li>
+        <li>
+          <a href="#harrastukset"> <span>Увлечения</span></a>
+        </li>
+        <li>
+          <a href="#yhteydenotto"><span>Контакты</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!--pääsivu-->
+    <!--profiili 1.osa-->
+    <div class="scrollspy" id="profiili">
+      <div class="container">
+        <div class="profiili">
+          <div class="profiili-minusta">
+            <h1>Катерина Бегун</h1>
+            <h3>разработчик программного обеспечения</h3>
+            <p>
+              Мои навыки в трудовой жизни - это взаимодействие и командная
+              работа, инициативность, надежность и ответственность. Я всегда
+              активно участвую в процессе. С другой стороны, я хорошо работаю
+              самостоятельно, быстро усваиваю новые материалы. У меня всегда
+              есть желание узнать что-то новое и поддерживать свои навыки в
+              актуальном состоянии.
+            </p>
+            <div class="profiili-button">
+              <!--painike lataamiseksi CV pdf-tiedostona-->
+              <div>
+                <a href="CV.pdf" download
+                  >Скачать резюме<img
+                    src="/img/login-arrow-symbol-entering-back-into-a-square_icon-icons.com_73221.png"
+                    alt="download-arrow"
+                /></a>
+              </div>
+              <!--painike siirtämiseksi vimeiseen sivuun-->
+              <div id="contact">
+                <a href="#yhteydenotto"
+                  >Написать мне<img
+                    src="/img/downarrow1_89397.png"
+                    alt="arrow"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="/img/photo.JPG" alt="photo" />
+        </div>
+      </div>
+      <!--painike siirtämiseksi toiseen sivuun-->
+      <div class="down">
+        <a href="#taidot"
+          ><img src="/img/downarrow_121316.svg" alt="down-arrow" />
+        </a>
+      </div>
+    </div>
+
+    <!--taidot 2.osa-->
+    <div class="scrollspy" id="taidot">
+      <div class="container">
+        <div class="taidot">
+          <div class="taidot-left">
+            <div class="taidot-it">
+              <h4>ИТ-навыки</h4>
+              <br />
+              <br />
+              <h4>Языки программирования</h4>
+              <p>Java • HTML5 • CSS3 • JavaScript • PHP • WordPress</p>
+              <br />
+              <h4>База данных, сервер и управление</h4>
+              <p>Amazon Web Services (AWS) • MariaDB • SQL • PhpMyAdmin</p>
+              <br />
+              <h4>Редакторы текста и кода</h4>
+              <p>Visual Studio Code • NetBeans</p>
+              <br />
+              <h4>Продукты Google</h4>
+              <p>Docs • Sheets • Forms • Drive</p>
+              <br />
+              <h4>Продукты Microsoft</h4>
+              <p>
+                Excel • Word • PowerPoint • Access • OneNote • OneDrive •
+                Outlook • Forms • Teams
+              </p>
+              <br />
+              <h4>Продукты Adobe</h4>
+              <p>Adobe Acrobat • Photoshop • Illustrator</p>
+            </div>
+          </div>
+          <div class="taidot-right">
+            <div class="taidot-muut">
+              <h4>Другие программы и навыки</h4>
+              <br /><br />
+              <p>
+                GitHub • Git • Docker • Установка сервера и виртуальной машины
+                (Oracle VM VirtualBox) • Операционные системы • Cookie-файлы •
+                Информационная безопасность
+              </p>
+            </div>
+            <div class="taidot-henkilokohtaiset">
+              <h4>Сильные стороны</h4>
+              <br />
+              <br />
+              Трудолюбие • Управление • Опыт руководителя • Создание команды •
+              Организационные навыки • Логическое мышление • Решение проблем •
+              Компетентность в обслуживании • Устойчивость к стрессу •
+              Позитивное мышление • Хорошее чувство юмора • Работа в команде •
+              Тайм-менеджмент • Обучаемость • Ответственность
+            </div>
+            <div class="taidot-kielet">
+              <h4>Языки</h4>
+              <br />
+              <p>
+                <img src="/img/united-kingdom.png" alt="english" />Английский
+                <br />
+                <i>средний уровень</i>
+              </p>
+              <p>
+                <img src="/img/finland.png" alt="finish" />Финский<br />
+                <i>средний уровень</i>
+              </p>
+              <p>
+                <img src="/img/russia.png" alt="russian" />Русский<br /><i>
+                  родной язык</i
+                >
+              </p>
+              <p>
+                <img src="/img/belarus.png" alt="belarussian" />Белорусский
+                <br />
+                <i>родной язык</i>
+              </p>
+            </div>
+            <div class="taidot-tyokortit">
+              <h4>Сертификаты</h4>
+              <br />
+              <p>
+                <img src="/img/tieke.jpg" alt="ab-kortti" />AB-kortti <br />
+                <i>Ноябрь 2020 - Бессрочно</i>
+              </p>
+              <p>
+                <img src="/img/Valvira.jfif" alt="anniskelu" />Anniskelupassi
+                <br />
+                <i>Декабрь 2019 - Бессрочно</i>
+              </p>
+              <p>
+                <img src="/img/Ruokavirasto.png" alt="hygienia" />Hygieniapassi
+                <br />
+                <i>Май 2020 - Бессрочно</i>
+              </p>
+              <p>
+                <img src="/img/Risti.jfif" alt="ensiapu" />Ensiapukortti <br />
+                <i>Декабрь 2019 - до Декабря 2022 </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--työkokemus ja koulutus 3.osa-->
+    <div class="scrollspy" id="tyokokemus">
+      <div class="container">
+        <div class="tyokokemus-kaikki">
+          <table class="tyokokemus-table">
+            <tr>
+              <th class="expirience">Опыт работы</th>
+              <th class="education">Образование</th>
+            </tr>
+            <tr>
+              <td class="expirience">
+                <img
+                  src="/img/29A67800-3CD2-439A-97C5-B0930F5BC0B6.png"
+                  alt="pin"
+                />
+                <h4>XB Software Ltd.</h4>
+                <br />
+                <i>Тестировщик программного обеспечения</i> <br />
+                11.2011 - 5.2012
+              </td>
+              <td class="education">
+                <img
+                  src="/img/97A0D43F-1CF7-440F-A9F8-8A6D44364917.png"
+                  alt="pin"
+                />
+                <h4>
+                  Riveria, степень бакалавра информационных и коммуникационных
+                  технологий
+                </h4>
+                <br />
+                <i>Разработчик программного обеспечения</i> <br />
+                2020 - 2022
+              </td>
+            </tr>
+            <tr>
+              <td class="expirience">
+                <img
+                  src="/img/9C067C0E-24C3-4C4B-BFE0-94858CBB6418.png"
+                  alt="pin"
+                />
+                <h4>Raiffeisen Bank International AG (учебная практика)</h4>
+                <br />
+                <i>Разработчик программного обеспечения</i> <br />
+                1.2011 - 5.2011
+              </td>
+              <td class="education">
+                <img src="/img/8Copy.png" alt="pin" />
+                <h4>
+                  Минский государственный высший радиотехнический колледж,
+                  cтепень бакалавра в области программного обеспечения
+                  информ.технологий
+                </h4>
+                <br />
+                <i>Техник-программист</i> <br />
+                2006 - 2011
+              </td>
+            </tr>
+          </table>
+          <!--muu työkokemus-->
+          <div class="tyokokemus-muu">
+            <input class="hide" id="hide" type="checkbox" />
+            <label for="hide" id="label"
+              ><img
+                src="/img/downarrow_121316.svg"
+                alt="Info"
+                id="info"
+              />Подробнее</label
+            >
+            <div class="lisaa">
+              <table class="tyokokemus-tablemuu">
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Cafe Taika Oy (учебная практика)</h4>
+                    <br />
+                    <i>Работник ресторана быстрого обслуживания</i><br />
+                    Июнь 2020
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>8 Store</h4>
+                    <br />
+                    <i>Менеджер, имидж-консультант</i><br />
+                    10.2018 - 10.2019
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Вегетарианское кафе Укроп</h4>
+                    <br />
+                    <i>Заместитель генерального директора</i><br />
+                    10.2015 - 09.2018
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Вегетарианское кафе Укроп</h4>
+                    <br />
+                    <i>Администратор</i><br />
+                    10.2014 - 10.2015
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Вегетарианское кафе Укроп</h4>
+                    <br />
+                    <i>Бармен</i><br />
+                    10.2013 - 10.2014
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Студия загара Hot Sun</h4>
+                    <br />
+                    <i>Менеджер</i><br />
+                    05.2013 - 10.2013
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Гранд кафе Bagatelle</h4>
+                    <br />
+                    <i>Бармен, официант</i><br />
+                    10.2012 - 12.2012
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Ресторан Charden</h4>
+                    <br />
+                    <i>Официант</i><br />
+                    07.2012 - 09.2012
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Граффити бар & клуб</h4>
+                    <br />
+                    <i>Официант</i><br />
+                    07.2011 - 01.2012
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>
+                      Минский государственный высший радиотехнический колледж
+                    </h4>
+                    <br />
+                    <i>Секретарь-машинист</i><br />
+                    01.2010 - 06.2011
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>ОАО "Белинвестбанк"</h4>
+                    <br />
+                    <i>Экономист</i><br />
+                    06.2008 - 08.2008
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--projektit 4.osa-->
+    <div class="scrollspy" id="projekti">
+      <div class="container">
+        <div class="projektit">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="text">
+                <h2>Projekti 1</h2>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet. Qui amet doloremque a atque
+                  maiores et voluptas alias et maiores sapiente. Ut tempore
+                  neque ab omnis voluptatibus qui harum sint non totam quia in
+                  numquam nostrum qui veritatis neque. Et autem dolores non
+                  repellendus tempora aut consectetur enim. A voluptates
+                  doloribus et temporibus tempora ut rerum itaque est aperiam
+                  minima eos iure quidem et voluptatibus laboriosam.
+                </p>
+              </div>
+              <div class="numbertext">
+                <p>1 / 3</p>
+                <img src="/img/1st-section.jpg" alt="projekti1" />
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="text">
+                <h2>Projekti 2</h2>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet. Qui amet doloremque a atque
+                  maiores et voluptas alias et maiores sapiente. Ut tempore
+                  neque ab omnis voluptatibus qui harum sint non totam quia in
+                  numquam nostrum qui veritatis neque. Et autem dolores non
+                  repellendus tempora aut consectetur enim. A voluptates
+                  doloribus et temporibus tempora ut rerum itaque est aperiam
+                  minima eos iure quidem et voluptatibus laboriosam.
+                </p>
+              </div>
+              <div class="numbertext">
+                <p>2 / 3</p>
+                <img src="/img/2nd-section.jpg" alt="projekti2" />
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="text">
+                <h2>Projekti 3</h2>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet. Qui amet doloremque a atque
+                  maiores et voluptas alias et maiores sapiente. Ut tempore
+                  neque ab omnis voluptatibus qui harum sint non totam quia in
+                  numquam nostrum qui veritatis neque. Et autem dolores non
+                  repellendus tempora aut consectetur enim. A voluptates
+                  doloribus et temporibus tempora ut rerum itaque est aperiam
+                  minima eos iure quidem et voluptatibus laboriosam.
+                </p>
+              </div>
+              <div class="numbertext">
+                <p>3 / 3</p>
+                <img src="/img/1st-section.jpg" alt="projekti3" />
+              </div>
+            </div>
+          </div>
+          <!--edellisen ja seuraavan sivun painikkeet-->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!--dot-navigointi alhaalla-->
+          <div
+            style="
+              text-align: center;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+            "
+          >
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--harrastukset 5.osa-->
+    <div class="scrollspy" id="harrastukset">
+      <div class="container">
+        <div class="harrastukset">
+          <img
+            src="/img/education_elearning_online_school_learning_icon_192486.png"
+            alt="harrastukset"
+          />
+          <div class="harrastukset-text">
+            <div class="harrastukset-shaped"></div>
+            <div>
+              <h2>Увлечения</h2>
+              <p>
+                В своих увлечениях я отдаю предпочтение чтению научно-популярной
+                литературе. Литература такого плана увлекает меня намного
+                больше, чем художественная. Считаю, она помогает мне в
+                саморазвитии и самосовершенствовании.
+                <br />
+                <br />
+                Я люблю активное времяпрепровождение, занимаюсь бегом, люблю
+                длинные прогулки, практикую йогу и медитацию, увлекаюсь
+                велоспортом на длинные дистанции, а также использую велосипед в
+                повседневной жизни.
+                <br />
+                <br />
+                Мне интересно познавать мир через путешествия, в которых я могу
+                посмотреть на город глазами местных жителей. Моя любовь к
+                структуризированию и подготовке находит свое отражение в
+                планировании поездки, что позволяет мне многое успеть и узнать.
+                <br />
+                <br />
+                Для меня ценна экологичность и устойчивое развитие. Неотъемлемой
+                частью моей жизни является любовь к природе, животным и желанию
+                следовать осознанному потреблению. Для меня важно сохранение
+                экологии, гуманное отношение к животным.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--yhteydenotto 6.osa-->
+    <div class="scrollspy" id="yhteydenotto">
+      <div class="container">
+        <div class="yhteydenotto">
+          <div class="yhteydenotto-form">
+            <h1>Форма связи</h1>
+            <form
+              onsubmit="javascript:return checkForm();"
+              action="database.php"
+              method="POST"
+            >
+              <div class="form-item">
+                <input type="text" name="name" id="name" required />
+                <label for="name">Имя*</label>
+              </div>
+              <div class="form-item">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Адрес электронной почты*</label>
+              </div>
+              <div class="form-item">
+                <textarea name="message" id="message" required></textarea>
+                <label for="message">Ваше сообщение...*</label>
+              </div>
+              <!--google captcha-->
+              <div
+                class="g-recaptcha brochure__form__captcha"
+                id="g-recaptcha"
+                data-sitekey="6LfwvYAcAAAAAL2oXRJvCEEP8VtjsPxXfA3jFHTC"
+              ></div>
+              <!--viesti virheistä-->
+              <p
+                id="afterCheck"
+                style="margin: 0; height: 5px; font-size: 14px"
+              ></p>
+              <br />
+              <input type="hidden" id="hidden" name="hidden" value="" />
+              <input
+                type="submit"
+                name="send"
+                id="send"
+                value="Послать сообщение"
+              />
+            </form>
+            <div class="yhteydenotto-icon">
+              <h2>или</h2>
+              <p>
+                <a href="https://github.com/KatsiarynaBiahun" target="_blank"
+                  ><img class="filter-svg" src="/img/github.svg" alt="GitHub"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/katariina-biahun/"
+                  target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/linked-in-square-button_icon-icons.com_68389.svg"
+                    alt="LinkedIn"
+                /></a>
+                <a
+                  href="https://www.facebook.com/katariina.biahun/"
+                  target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/facebook.svg"
+                    alt="Facebook"
+                /></a>
+                <a href="https://telegram.im/katsiarynabiahun" target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/telegram_black_logo_icon_147073.svg"
+                    alt="Telegram"
+                /></a>
+                <a href="tel:+358452784041"
+                  ><img
+                    class="filter-svg"
+                    src="/img/cellphone_79786.svg"
+                    alt="Puhelinnumero"
+                /></a>
+                <a href="mailto:9463011@gmail.com" target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/mail_icon-icons.com_72317.svg"
+                    alt="Email"
+                /></a>
+                <a
+                  href="https://maps.google.com/?q=Noljakankaari+12"
+                  target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/location-mark_icon-icons.com_70927.svg"
+                    alt="Osoite"
+                /></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--lähetysviesti-->
+        <div class="yhteydenotto-report" id="yhteydenotto-report">
+          <div class="yhteydenotto-button">
+            <button type="button" id="close">&times;</button>
+          </div>
+          <p>
+            <img src="/img/paper_plane_send_icon_185952.png" alt="airplane" />
+            Вы отправили сообщение.
+          </p>
+        </div>
+      </div>
+      <!--painike siirtyäksesi ensimmäiselle sivulle-->
+      <div class="up">
+        <a href="#profiili"
+          ><img src="/img/chevron_double_up_icon_160253.svg" alt="up-arrow"
+        /></a>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <p>Авторское право © <time datetime="2021">2021</time> Катерина Бегун</p>
+      <address>Йоэнсуу, Финлянлия.</address>
+    </footer>
+
+    <!--lähetysviestin lisäksi sivupimennys tulee näkyviin-->
+    <div id="black"></div>
+
+    <!--preloader edistymispalkki-->
+    <div class="preloader">
+      <div class="preloader__loader">
+        <div id="progressBar">
+          <div id="edistymispalkki">1%</div>
+        </div>
+      </div>
+    </div>
+
+    <!--cookie, evästeet-->
+    <div class="cookie" id="cookie">
+      <form>
+        <div>
+          <p><b>Этот веб-сайт использует файлы куки</b></p>
+          <p id="cookie-two">
+            Сайт использует файлы cookie для максимального удобства. Кликнув
+            «Принять» вы соглашаетесь с условиями и можете продолжать
+            использовать сайт. Если вы не согласны, нажмите кнопку X.
+          </p>
+          <input type="button" name="accept" id="accept" value="Принять" />
+        </div>
+        <input type="button" name="cancel" id="cancel" value="✕" />
+      </form>
+    </div>
+
+    <!--navbar smooth scrolling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/scroll.js"></script>
+    <!--header responsive-->
+    <script src="../js/header.js"></script>
+    <!--captcha-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--form checked-->
+    <script src="../js/form.js"></script>
+    <!--slideshow-->
+    <script src="../js/slideshow.js"></script>
+    <!--preloader-->
+    <script src="../js/preloader.js"></script>
+    <!--cookie-->
+    <script src="../js/cookie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--sivun kuvaus-->
+    <meta
+      name="description"
+      content="Lue lisää Katariina Biahunista portfolio-sivustolta ja tutustu tietoihin. Etsi työntekijä tiimillesi, on ilo työskennellä kanssasi. Tervetuloa!"
+    />
+    <meta name="keywords" content="ohjelmistokehittäjä, työ, kokemus" />
+    <meta name="author" content="Katariina Biahun" />
+    <!--sivun icon-->
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <!--css tiedostot-->
+    <link rel="stylesheet" href="css/preloader.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/container.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/slideshow.css" type="text/css" />
+    <!--sivun kielivaihtoehdot-->
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com"
+      hreflang="x-default"
+    />
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com"
+      hreflang="fi"
+    />
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com/ru"
+      hreflang="ru"
+    />
+    <link
+      rel="alternate"
+      href="http://ec2-13-53-169-24.eu-north-1.compute.amazonaws.com/en"
+      hreflang="en"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WDXK8PNZS6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-WDXK8PNZS6");
+    </script>
+    <!--sivun title-->
+    <title>Katariina Biahun • Ansioluettelo</title>
+  </head>
+
+  <body onload="load()">
+    <!--navigointivalikon yläpuolella-->
+    <header>
+      <div class="header" id="header-link">
+        <ul>
+          <li class="current">
+            <a href="#profiili">Profiili</a>
+          </li>
+          <li><a href="#taidot">Taidot ja työkortit</a></li>
+          <li><a href="#tyokokemus">Työkokemus ja koulutus</a></li>
+          <li><a href="#projekti">Projektit</a></li>
+          <li><a href="#harrastukset">Harrastukset</a></li>
+          <li><a href="#yhteydenotto">Yhteydenotto</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="headerResponsive()"
+          >&#9776;</a
+        >
+        <!--avattavasta luettelosta sivujen kielet-->
+        <select name="Languages" onchange="location = this.value;">
+          <option value="/index.html" selected>SU</option>
+          <option value="/en/index.html">EN</option>
+          <option value="/ru/index.html">VEN</option>
+        </select>
+      </div>
+    </header>
+
+    <!--navigointivalikon oikealla puolella-->
+    <div class="navbar" id="na">
+      <ul>
+        <li class="current">
+          <a href="#profiili"><span>Profiili</span> </a>
+        </li>
+        <li>
+          <a href="#taidot"><span>Taidot ja työkortit</span></a>
+        </li>
+        <li>
+          <a href="#tyokokemus"> <span>Työkokemus ja Koulutus</span></a>
+        </li>
+        <li>
+          <a href="#projekti"><span>Projektit</span></a>
+        </li>
+        <li>
+          <a href="#harrastukset"> <span>Harrastukset</span></a>
+        </li>
+        <li>
+          <a href="#yhteydenotto"><span>Yhteydenotto</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!--pääsivu-->
+    <!--profiili 1.osa-->
+    <div class="scrollspy" id="profiili">
+      <div class="container">
+        <div class="profiili">
+          <div class="profiili-minusta">
+            <h1>Katariina Biahun</h1>
+            <h3>o h j e l m i s t o k e h i t t ä j ä</h3>
+            <p>
+              Työelämätaitoni ovat vuorovaikutus ja ryhmätyö, oma-aloitteisuus,
+              luotettavuus ja vastuullisuus. Olen aina aktiivisesti mukana
+              prosessissa. Toisaalta teen hyvin töitä itsenäisesti, olen hyvin
+              järjestelmällinen, opin nopeasti uuden materiaaleja. Minulla on
+              aina halu oppia uutta ja oman osaamisen pitäminen ajantasaisena.
+            </p>
+            <div class="profiili-button">
+              <!--painike lataamiseksi CV pdf-tiedostona-->
+              <div>
+                <a href="CV.pdf" download
+                  >Lataa CV<img
+                    src="/img/login-arrow-symbol-entering-back-into-a-square_icon-icons.com_73221.png"
+                    alt="download-arrow"
+                /></a>
+              </div>
+              <!--painike siirtämiseksi vimeiseen sivuun-->
+              <div id="contact">
+                <a href="#yhteydenotto"
+                  >Ota yhteyttä<img
+                    src="/img/downarrow1_89397.png"
+                    alt="arrow"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="/img/photo.JPG" alt="photo" />
+        </div>
+      </div>
+      <!--painike siirtämiseksi toiseen sivuun-->
+      <div class="down">
+        <a href="#taidot"
+          ><img src="/img/downarrow_121316.svg" alt="down-arrow" />
+        </a>
+      </div>
+    </div>
+
+    <!--taidot 2.osa-->
+    <div class="scrollspy" id="taidot">
+      <div class="container">
+        <div class="taidot">
+          <div class="taidot-left">
+            <div class="taidot-it">
+              <h4>IT taidot</h4>
+              <br />
+              <br />
+              <h4>Ohjelmointikielet</h4>
+              <p>Java • HTML5 • CSS3 • JavaScript • PHP • WordPress</p>
+              <br />
+              <h4>Tietokanta, palvelin & hallinta</h4>
+              <p>Amazon Web Services (AWS) • MariaDB • SQL • PhpMyAdmin</p>
+              <br />
+              <h4>Teksti- ja koodieditori</h4>
+              <p>Visual Studio Code • NetBeans</p>
+              <br />
+              <h4>Google -tuotteet</h4>
+              <p>Docs • Sheets • Forms • Drive</p>
+              <br />
+              <h4>Microsoft -tuotteet</h4>
+              <p>
+                Excel • Word • PowerPoint • Access • OneNote • OneDrive •
+                Outlook • Forms • Teams
+              </p>
+              <br />
+              <h4>Adobe -tuotteet</h4>
+              <p>Adobe Acrobat • Photoshop • Illustrator</p>
+            </div>
+          </div>
+          <div class="taidot-right">
+            <div class="taidot-muut">
+              <h4>Muut ohjelmat ja taidot</h4>
+              <br /><br />
+              <p>
+                GitHub • Git • Docker • Serverin ja virtuaalinen työkone
+                asentaminen (Oracle VM VirtualBox) • Käyttöjärjestelmät •
+                Evästeet • Tietoturva
+              </p>
+            </div>
+            <div class="taidot-henkilokohtaiset">
+              <h4>Henkilökohtaiset vahvuudet</h4>
+              <br />
+              <br />
+              Ahkera • Johto • Esimieskokemus • Joukkueen rakentaminen •
+              Organisointitaidot • Looginen päättelykyky • Ongelmanratkaisu •
+              Palveluosaaminen • Stressinsietokyky • Positiivinen ajattelutapa •
+              Hyvä huumorintaju • Tiimityö • Ajanhallinta • Koulutus •
+              Vastuullisuus
+            </div>
+            <div class="taidot-kielet">
+              <h4>Kielitaidot</h4>
+              <br />
+              <p>
+                <img src="/img/united-kingdom.png" alt="english" /> Englanti
+                <br />
+                <i>hyvä</i>
+              </p>
+              <p>
+                <img src="/img/finland.png" alt="finish" />Suomi <br />
+                <i>hyvä</i>
+              </p>
+              <p>
+                <img src="/img/russia.png" alt="russian" /> Venäjä <br /><i>
+                  äidinkieli
+                </i>
+              </p>
+              <p>
+                <img src="/img/belarus.png" alt="belarussian" /> Valko-Venäjä
+                <br />
+                <i>äidinkieli</i>
+              </p>
+            </div>
+            <div class="taidot-tyokortit">
+              <h4>Työkortit</h4>
+              <br />
+              <p>
+                <img src="/img/tieke.jpg" alt="ab-kortti" />AB-kortti <br />
+                <i>Marraskuu 2020 - toistaiseksi </i>
+              </p>
+              <p>
+                <img src="/img/Valvira.jfif" alt="anniskelu" />Anniskelupassi
+                <br />
+                <i>Joulukuu 2019 - toistaiseksi </i>
+              </p>
+              <p>
+                <img src="/img/Ruokavirasto.png" alt="hygienia" />Hygieniapassi
+                <br />
+                <i>Toukokuu 2020 - toistaiseksi </i>
+              </p>
+              <p>
+                <img src="/img/Risti.jfif" alt="ensiapu" />Ensiapukortti <br />
+                <i>Joulukuu 2019 - vanhenee 12.22</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--työkokemus ja koulutus 3.osa-->
+    <div class="scrollspy" id="tyokokemus">
+      <div class="container">
+        <div class="tyokokemus-kaikki">
+          <table class="tyokokemus-table">
+            <tr>
+              <th class="expirience">Työkokemus</th>
+              <th class="education">Koulutus</th>
+            </tr>
+            <tr>
+              <td class="expirience">
+                <img
+                  src="/img/29A67800-3CD2-439A-97C5-B0930F5BC0B6.png"
+                  alt="pin"
+                />
+                <h4>XB Software Ltd.</h4>
+                <br />
+                <i>Testaaja (manuaalinen)</i> <br />
+                11.2011 - 5.2012
+              </td>
+              <td class="education">
+                <img
+                  src="/img/97A0D43F-1CF7-440F-A9F8-8A6D44364917.png"
+                  alt="pin"
+                />
+                <h4>Riveria, Tieto- ja viestintäteknikan perustutkinto</h4>
+                <br />
+                <i>Ohjelmistokehittäjä</i> <br />
+                2020 - 2022
+              </td>
+            </tr>
+            <tr>
+              <td class="expirience">
+                <img
+                  src="/img/9C067C0E-24C3-4C4B-BFE0-94858CBB6418.png"
+                  alt="pin"
+                />
+                <h4>Raiffeisen Bank International AG (työharjoittelu)</h4>
+                <br />
+                <i>Ohjelmistokehittäjä</i> <br />
+                1.2011 - 5.2011
+              </td>
+              <td class="education">
+                <img src="/img/8Copy.png" alt="pin" />
+                <h4>
+                  Minskin valtionjohtoinen korkea-asteen radioteknillinen
+                  opisto, Tietoteknologioiden ohjelmistohuollon perustutkinto
+                </h4>
+                <br />
+                <i>Ohjelmistokehittäjä</i> <br />
+                2006 - 2011
+              </td>
+            </tr>
+          </table>
+          <!--muu työkokemus-->
+          <div class="tyokokemus-muu">
+            <input class="hide" id="hide" type="checkbox" />
+            <label for="hide" id="label"
+              ><img src="/img/downarrow_121316.svg" alt="Info" id="info" /> Lue
+              lisää</label
+            >
+            <div class="lisaa">
+              <table class="tyokokemus-tablemuu">
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Cafe Taika Oy (työharjoittelu)</h4>
+                    <br />
+                    <i>Ravintolan työntekijä</i><br />
+                    Kesäkuu 2020
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>8 Store</h4>
+                    <br />
+                    <i>Manageri, stylisti-konsultti</i><br />
+                    10.2018 - 10.2019
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Kasvis- ja vegaanikahvila Ukrop</h4>
+                    <br />
+                    <i>Varapääjohtaja</i><br />
+                    10.2015 - 09.2018
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Kasvis- ja vegaanikahvila Ukrop</h4>
+                    <br />
+                    <i>Ravintolapäällikkö</i><br />
+                    10.2014 - 10.2015
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Kasvis- ja vegaanikahvila Ukrop</h4>
+                    <br />
+                    <i>Baarimestari</i><br />
+                    10.2013 - 10.2014
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Rusketusstudio Hot Sun</h4>
+                    <br />
+                    <i>Johtaja</i><br />
+                    05.2013 - 10.2013
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Kahvila Bagatelle</h4>
+                    <br />
+                    <i>Baarimestari, tarjoilija </i><br />
+                    10.2012 - 12.2012
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Ravintola Charden</h4>
+                    <br />
+                    <i>Tarjoilija</i><br />
+                    07.2012 - 09.2012
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>Graffiti-baari ja -klubi</h4>
+                    <br />
+                    <i>Tarjoilija</i><br />
+                    07.2011 - 01.2012
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>
+                      Minskin valtionjohtoinen korkea-asteen radioteknillinen
+                      opisto
+                    </h4>
+                    <br />
+                    <i>Sihteeri, konekirjoittaja</i><br />
+                    01.2010 - 06.2011
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/img/8Copy.png" alt="pin" />
+                    <h4>JSC "Belinvestbank"</h4>
+                    <br />
+                    <i>Taloustieteilijä</i><br />
+                    06.2008 - 08.2008
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--projektit 4.osa-->
+    <div class="scrollspy" id="projekti">
+      <div class="container">
+        <div class="projektit">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="text">
+                <h2>Projekti 1</h2>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet. Qui amet doloremque a atque
+                  maiores et voluptas alias et maiores sapiente. Ut tempore
+                  neque ab omnis voluptatibus qui harum sint non totam quia in
+                  numquam nostrum qui veritatis neque. Et autem dolores non
+                  repellendus tempora aut consectetur enim. A voluptates
+                  doloribus et temporibus tempora ut rerum itaque est aperiam
+                  minima eos iure quidem et voluptatibus laboriosam.
+                </p>
+              </div>
+              <div class="numbertext">
+                <p>1 / 3</p>
+                <img src="/img/1st-section.jpg" alt="projekti1" />
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="text">
+                <h2>Projekti 2</h2>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet. Qui amet doloremque a atque
+                  maiores et voluptas alias et maiores sapiente. Ut tempore
+                  neque ab omnis voluptatibus qui harum sint non totam quia in
+                  numquam nostrum qui veritatis neque. Et autem dolores non
+                  repellendus tempora aut consectetur enim. A voluptates
+                  doloribus et temporibus tempora ut rerum itaque est aperiam
+                  minima eos iure quidem et voluptatibus laboriosam.
+                </p>
+              </div>
+              <div class="numbertext">
+                <p>2 / 3</p>
+                <img src="/img/2nd-section.jpg" alt="projekti2" />
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="text">
+                <h2>Projekti 3</h2>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet. Qui amet doloremque a atque
+                  maiores et voluptas alias et maiores sapiente. Ut tempore
+                  neque ab omnis voluptatibus qui harum sint non totam quia in
+                  numquam nostrum qui veritatis neque. Et autem dolores non
+                  repellendus tempora aut consectetur enim. A voluptates
+                  doloribus et temporibus tempora ut rerum itaque est aperiam
+                  minima eos iure quidem et voluptatibus laboriosam.
+                </p>
+              </div>
+              <div class="numbertext">
+                <p>3 / 3</p>
+                <img src="/img/1st-section.jpg" alt="projekti3" />
+              </div>
+            </div>
+          </div>
+          <!--edellisen ja seuraavan sivun painikkeet-->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!--dot-navigointi alhaalla-->
+          <div
+            style="
+              text-align: center;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+            "
+          >
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--harrastukset 5.osa-->
+    <div class="scrollspy" id="harrastukset">
+      <div class="container">
+        <div class="harrastukset">
+          <img
+            src="/img/education_elearning_online_school_learning_icon_192486.png"
+            alt="harrastukset"
+          />
+          <div class="harrastukset-text">
+            <div class="harrastukset-shaped"></div>
+            <div>
+              <h2>Harrastukset</h2>
+              <p>
+                Harrastuksina suosin populaaritieteellisen kirjallisuuden
+                lukemista. Tällainen kirjallisuus kiehtoo minua enemmän kuin
+                fiktiota. Luulen, että hän auttaa minua itsensä kehittämisessä.
+                <br /><br />
+                Pidän aktiivisesta harrastuksesta, lenkkeilystä, pitkistä
+                kävelylenkeistä, harrastan joogaa ja meditaatiota, tykkään
+                pyöräilystä pitkiä matkoja ja käytän myös polkupyörää
+                jokapäiväisessä elämässäni.
+                <br /><br />
+                Olen kiinnostunut oppimaan maailmasta matkustamisen kautta,
+                jossa voin katsoa kaupunkia paikallisten asukkaiden silmin.
+                Rakkauteni jäsentämiseen ja valmistautumiseen heijastuu
+                matkasuunnitelmiini, jonka ansiosta minulla on paljon aikaa
+                nauttia maisemia ja katsoa jotakin uutta.
+                <br /><br />
+                Ympäristöystävällisyys ja kestävä kehitys ovat minulle
+                arvokkaita. Olennainen osa elämääni on rakkaus luontoon,
+                eläimiin ja halu seurata tietoista kulutusta. Minulle on tärkeää
+                säilyttää ympäristö, inhimillinen asenne eläimiin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--yhteydenotto 6.osa-->
+    <div class="scrollspy" id="yhteydenotto">
+      <div class="container">
+        <div class="yhteydenotto">
+          <div class="yhteydenotto-form">
+            <h1>Ota yhteyttä</h1>
+            <form
+              onsubmit="javascript:return checkForm();"
+              action="database.php"
+              method="POST"
+            >
+              <div class="form-item">
+                <input type="text" name="name" id="name" required />
+                <label for="name">Nimi*</label>
+              </div>
+              <div class="form-item">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Sähköposti*</label>
+              </div>
+              <div class="form-item">
+                <textarea name="message" id="message" required></textarea>
+                <label for="message">Sinun viestisi...*</label>
+              </div>
+              <!--google captcha-->
+              <div
+                class="g-recaptcha brochure__form__captcha"
+                id="g-recaptcha"
+                data-sitekey="6LfwvYAcAAAAAL2oXRJvCEEP8VtjsPxXfA3jFHTC"
+              ></div>
+              <!--viesti virheistä-->
+              <p
+                id="afterCheck"
+                style="margin: 0; height: 5px; font-size: 14px"
+              ></p>
+              <br />
+              <input type="hidden" id="hidden" name="hidden" value="" />
+              <input
+                type="submit"
+                name="send"
+                id="send"
+                value="Lähetä viesti"
+              />
+            </form>
+            <div class="yhteydenotto-icon">
+              <h2>tai</h2>
+              <p>
+                <a href="https://github.com/KatsiarynaBiahun" target="_blank"
+                  ><img class="filter-svg" src="/img/github.svg" alt="GitHub"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/katariina-biahun/"
+                  target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/linked-in-square-button_icon-icons.com_68389.svg"
+                    alt="LinkedIn"
+                /></a>
+                <a
+                  href="https://www.facebook.com/katariina.biahun/"
+                  target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/facebook.svg"
+                    alt="Facebook"
+                /></a>
+                <a href="https://telegram.im/katsiarynabiahun" target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/telegram_black_logo_icon_147073.svg"
+                    alt="Telegram"
+                /></a>
+                <a href="tel:+358452784041"
+                  ><img
+                    class="filter-svg"
+                    src="/img/cellphone_79786.svg"
+                    alt="Puhelinnumero"
+                /></a>
+                <a href="mailto:9463011@gmail.com" target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/mail_icon-icons.com_72317.svg"
+                    alt="Email"
+                /></a>
+                <a
+                  href="https://maps.google.com/?q=Noljakankaari+12"
+                  target="_blank"
+                  ><img
+                    class="filter-svg"
+                    src="/img/location-mark_icon-icons.com_70927.svg"
+                    alt="Osoite"
+                /></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--lähetysviesti-->
+        <div class="yhteydenotto-report" id="yhteydenotto-report">
+          <div class="yhteydenotto-button">
+            <button type="button" id="close">&times;</button>
+          </div>
+          <p>
+            <img src="/img/paper_plane_send_icon_185952.png" alt="airplane" />
+            Lähetit viestin.
+          </p>
+        </div>
+      </div>
+      <!--painike siirtyäksesi ensimmäiselle sivulle-->
+      <div class="up">
+        <a href="#profiili"
+          ><img src="/img/chevron_double_up_icon_160253.svg" alt="up-arrow"
+        /></a>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <p>Tekijänoikeus © <time datetime="2021">2021</time> Katariina Biahun</p>
+      <address>Joensuu, Suomi.</address>
+    </footer>
+
+    <!--lähetysviestin lisäksi sivupimennys tulee näkyviin-->
+    <div id="black"></div>
+
+    <!--preloader edistymispalkki-->
+    <div class="preloader">
+      <div class="preloader__loader">
+        <div id="progressBar">
+          <div id="edistymispalkki">1%</div>
+        </div>
+      </div>
+    </div>
+
+    <!--cookie, evästeet-->
+    <div class="cookie" id="cookie">
+      <form>
+        <div>
+          <p><b>Tämä sivusto käyttää evästeet.</b></p>
+          <p id="cookie-two">
+            Sivusto käyttää evästeitä parhaan mahdollisen kokemuksen saamiseksi.
+            Klikkaamalla "Hyväksy"-painikkeellä hyväksyt ehdot ja voit jatkaa
+            sivuston käyttöä. Jos haluat kieltää evästeet, napsauta
+            X-painiketta.
+          </p>
+          <input type="button" name="accept" id="accept" value="Button" />
+        </div>
+        <input type="button" name="cancel" id="cancel" value="✕" />
+      </form>
+    </div>
+
+    <!--navbar smooth scrolling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <!--header responsive-->
+    <script src="js/header.js"></script>
+    <!--captcha-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--form checked-->
+    <script src="js/form.js"></script>
+    <!--slideshow-->
+    <script src="js/slideshow.js"></script>
+    <!--preloader-->
+    <script src="js/preloader.js"></script>
+    <!--cookie-->
+    <script src="js/cookie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Lora-Regular.ttf);
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Light.ttf);
+}
+
+body {
+  background-image: url(/img/8.png);
+  background-size: cover;
+  font-family: Lora;
+  overflow-x: hidden; /*poista vaakasuuntainen vierityspalkki*/
+}
+
+/*poista vierityspalkki koko sivulta */
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+#black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  opacity: 0.6;
+  z-index: 9998;
+}
+
+h1,
+h2 {
+  font-family: Raleway;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+h3,
+h4 {
+  font-family: Raleway;
+}
+
+h4 {
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+input,
+textarea,
+button {
+  font-family: Lora;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.cookie {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  z-index: 9999;
+  animation: mymove 2s forwards;
+  animation-timing-function: ease-out;
+}
+
+.cookie div {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cookie p#cookie-two {
+  max-width: 700px;
+  width: 100%;
+}
+
+.cookie p,
+.cookie input {
+  float: left;
+  margin: 10px;
+}
+
+#cancel {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cookie input#accept {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  text-transform: uppercase;
+  color: #f0bda6;
+  font-size: 16px;
+  border: 3px solid #f0bda6;
+}
+
+.cookie input#cancel {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  color: #818181;
+  border: 1px solid #818181;
+}
+
+/*eväste animaatio*/
+@keyframes mymove {
+  from {
+    bottom: -90px;
+  }
+  to {
+    bottom: 0px;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cookie div {
+    width: 90%;
+  }
+  .cookie p#cookie-two {
+    font-size: 12px;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cookie p,
+  .cookie p#cookie-two {
+    width: 50%;
+    font-size: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cookie input#accept {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cookie p#cookie-two {
+    width: 50%;
+    font-size: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cookie p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cookie input#accept {
+    padding: 5px;
+  }
+}
