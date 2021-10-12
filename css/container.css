@@ -12,6 +12,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 1700px) {
+  .scrollspy {
+    border: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .scrollspy {
     border: none;
@@ -310,7 +316,7 @@
   .yhteydenotto-form {
     margin: 0 auto;
     left: -19px;
-    margin-top: 300px;
+    margin-top: 450px;
     margin-bottom: 20px;
   }
   .yhteydenotto-form form {
@@ -416,7 +422,7 @@
 .taidot-it {
   position: relative;
   padding: 20px;
-  height: 760px;
+  height: 720px;
   max-width: 310px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -471,6 +477,28 @@
   margin-right: 10px;
 }
 
+@media only screen and (max-width: 1700px) {
+  .taidot-it,
+  .taidot-left {
+    width: 80%;
+    height: auto;
+  }
+  .taidot-right,
+  .taidot-kielet,
+  .taidot-muut,
+  .taidot-tyokortit,
+  .taidot-henkilokohtaiset {
+    width: 50%;
+    height: auto;
+  }
+  .taidot-kielet {
+    margin-top: 450px;
+  }
+  .taidot-tyokortit {
+    margin-top: 550px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .taidot-it,
   .taidot-left {
@@ -512,19 +540,24 @@
   .taidot-right {
     display: none;
   }
+  .taidot {
+    margin-top: 100px;
+  }
 }
 
 /* 3.osa */
 .tyokokemus-kaikki {
   top: 200px;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .tyokokemus-table {
   position: relative;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   border: transparent;
 }
@@ -669,22 +702,6 @@
   }
 }
 
-/* 4.osa */
-.projektit {
-  margin-top: 150px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  height: 700px;
-  max-width: 1600px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.numbertext img {
-  width: 100%;
-}
-
 /* 5.osa */
 .harrastukset {
   position: relative;
@@ -737,6 +754,17 @@
   margin: 40px;
 }
 
+@media only screen and (max-width: 1700px) {
+  .harrastukset,
+  .harrastukset-text {
+    width: 90%;
+    margin-right: 200px;
+  }
+  .harrastukset img {
+    width: 40%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .harrastukset,
   .harrastukset-text {
@@ -746,6 +774,7 @@
     width: 40%;
   }
 }
+
 @media only screen and (max-width: 992px) {
   .harrastukset,
   .harrastukset-text {
@@ -760,6 +789,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .harrastukset {
+    margin-top: 150px;
+  }
   .harrastukset,
   .harrastukset-text {
     width: 100%;
