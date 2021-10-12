@@ -7,7 +7,14 @@ document.getElementById("email").addEventListener("change", function () {
   if (at < 1 || dot < at + 2 || dot + 2 >= x.length) {
     document.getElementById("email").value = "";
     document.getElementById("email").style.borderColor = "rgb(244, 114, 109)";
-    document.getElementById("afterCheck").innerText = "email invalid";
+    //tarkistetaan kieli ja näytetään viesti oikealla kielellä 
+    if (document.documentElement.lang === "fi") {
+      document.getElementById("afterCheck").innerText = "Sähköposti virheellinen";
+    } else if (document.documentElement.lang === "en") {
+      document.getElementById("afterCheck").innerText = "Email invalid";
+    } else if (document.documentElement.lang === "ru") {
+      document.getElementById("afterCheck").innerText = "Aдрес электронной почты недействителен";
+    }
     document.getElementById("afterCheck").style.color = "rgb(244, 114, 109)";
   } else {
     document.getElementById("email").style.borderColor = "none";
@@ -31,8 +38,17 @@ function checkForm() {
     document.getElementById("message").value === "" ||
     grecaptcha.getResponse() == ""
   ) {
+    //tarkistetaan kieli ja näytetään viesti oikealla kielellä 
+    if (document.documentElement.lang === "fi") {
     document.getElementById("afterCheck").innerText =
       "Tarkista, että olet täyttänyt kaikki pakolliset kentät ja olet vahvistanyt, ettet ole robotti.";
+    } else if (document.documentElement.lang === "en") {
+      document.getElementById("afterCheck").innerText =
+        "Check that you have filled in all required fields and confirmed that you are not a robot.";
+    } else if (document.documentElement.lang === "ru") {
+      document.getElementById("afterCheck").innerText =
+        "Убедитесь, что вы заполнили все обязательные поля и подтвердили, что вы не робот.";
+    }
     document.getElementById("afterCheck").style.color =
       "rgb(244, 114, 109)";
     return false;
